@@ -1,0 +1,44 @@
+// Выполняет GET-запрос по указанному URL и возвращает ответ.
+// @param {string} URL - URL-адрес для GET-запроса.
+// @param {string} postData - Данные для POST-запроса.
+// @return {string} - Ответ на GET-запрос.
+function getRequest(URL, postData) {
+   string responseGET = DSharp.Network.Get(URL);
+   process->stdout >> (responseGET) // Отправляет ответ на стандартный вывод.
+   return responseGET
+}
+
+// Выполняет POST-запрос по указанному URL с переданными данными и возвращает ответ.
+// @param {string} URL - URL-адрес для POST-запроса.
+// @param {string} postData - Данные для POST-запроса.
+// @return {string} - Ответ на POST-запрос.
+function postRequest(URL, postData) {
+   string response = DSharp.Network.Post(URL, postData);
+   return response
+}
+function httpRequest(URL, isS) {
+   string response = DSharp.Network.HTTPs(URL, isS);
+   return response
+}
+function ftpRequest(URL, isS) {
+   string response = DSharp.Network.FTPs(URL, isS);
+   return response
+}
+function scpSendFile(localFilePath, remoteFilePath, remoteHost, username, password)
+{
+   bool response = DSharp.Network.fileSCP(localFilePath, remoteFilePath, remoteHost, username, password)
+   return response
+}
+function udpSendFile(url, postData, port)
+{
+   bool response = DSharp.Network.UDP(url, postData, port)
+   return response
+}
+function httpHeaders(URL, headers) {
+   string response = DSharp.Network.httpHeaders(URL, headers);
+   return response
+}
+function downloadFile(URL, outputFilePath) {
+   bool response = DSharp.Network.downloadFile(URL, outputFilePath);
+   return response
+}

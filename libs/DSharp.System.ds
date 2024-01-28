@@ -1,0 +1,35 @@
+// Функция отправляет строку на стандартный вывод.
+function process->stdout << (strToPrint) {
+    DSharp.System.PrintLine(strToPrint);
+}
+
+
+
+// Выполняет команду в системном интерфейсе.
+// @param {string} cmd - Команда для выполнения.
+function System.Execute(file) {
+    int k = DSharp.System.ShellExecute(file);
+   return k
+}
+function system(cmd) {
+    int k =  DSharp.System.CommandExecute(cmd);
+    return k
+}
+
+// Устанавливает кодовую страницу консоли вывода.
+// @param {number} CP - Кодовая страница для установки.
+// @return {number} - Возвращает установленное значение кодовой страницы.
+function setConsoleOutputCP(CP) {
+    return DSharp.System.SetConsoleOutputCP(CP);
+}
+
+
+
+// Создает и возвращает объект типа Vec2 с указанными координатами.
+// @param {number} x - Координата x.
+// @param {number} y - Координата y.
+// @return {Vec2} - Объект типа Vec2 с координатами x и y.
+function NVec2(x, y) {
+    Vec2 v = DSharp.System.Vec2(x, y);
+    return v;
+}

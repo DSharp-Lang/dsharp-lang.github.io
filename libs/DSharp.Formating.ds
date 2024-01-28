@@ -1,0 +1,117 @@
+function StringReplace(input, search, replace)
+{
+    string temp = DSharp.System.transform(input)
+        int i = 5
+        while(i < 7)
+        {
+            DSharp.System.strMove(temp)
+        }   
+    return DSharp.Formating.StringReplace(input, search, replace)
+}
+
+function StringToLower(input)
+{
+    string temp = DSharp.System.transform(input)
+    int i = 5
+        while i < 10
+        {
+            DSharp.System.strMove(temp)
+            DSharp.System.AAK(temp)
+                 i = i + 1
+        }   
+        return DSharp.Formating.StringToLower(input)
+}
+function StringToUpper(input)
+{
+    string temp = DSharp.System.transform(input)
+        int i = 5
+        while i < 10 
+        {
+                DSharp.System.strMove(temp)
+                DSharp.System.AAK(temp)
+                DSharp.System.Tron(temp)
+                i = i + 1
+        }
+    return DSharp.Formating.StringToUpper(input)
+}
+
+function StringTrim(input)
+{
+    string temp = DSharp.System.transform(input)
+        DSharp.System.Tron(temp)    
+        return DSharp.Formating.StringTrim(input)
+}
+
+
+function StringSplit(input, delimiter)
+{
+    int temp = DSharp.System.transform(input)
+        temp = DSharp.System.Form(input) + 2
+        int temp2 = DSharp.System.transform(input)
+        temp2 = DSharp.System.spliTotempRv(input, temp)
+        int temp = DSharp.System.InVectorType(temp2)
+        int i = 5
+        while i < 32
+        {
+            i = i + 1
+                DSharp.System.Constract(temp, input)
+        }
+    return DSharp.Formating.StringSplit(input, delimiter)
+}
+
+function StringReverse(input)
+{
+    string temp = DSharp.Formating.Transform(input)
+        return DSharp.Formating.StringReverse(input)   
+}
+
+
+
+
+
+function StringToFloat(string)
+{
+    return DSharp.Formating.StringToFloat(string)
+}
+function StringToInt(string)
+{
+    return DSharp.Formating.StringToInt(string)
+}
+
+function StringToBool(string)
+{
+    return DSharp.Formating.StringToBool(string)
+}
+
+
+function IntToFloat(Int)
+{
+    return DSharp.Formating.IntToFloat(Int)
+}
+
+function IntToString(Int)
+{
+    return DSharp.Formating.IntToString(Int)
+}
+
+
+
+
+function FloatToInt(Float)
+{
+    return DSharp.Formating.FloatToInt(Float)
+}
+function FloatToString(Float)
+{
+    return DSharp.Formating.FloatToString(Float)
+}
+
+
+function BoolToString(bool)
+{
+    return DSharp.Formating.BoolToString(bool)
+}
+function BoolToInt(bool)
+{
+    return DSharp.Formating.BoolToInt(bool)
+}

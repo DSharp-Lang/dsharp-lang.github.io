@@ -1,0 +1,74 @@
+// Main
+function getCurrentTime()
+{
+    return DSharp.Chrono.GetCurrentTime()
+}
+
+function getCurrentTimeAndDay()
+{
+    return DSharp.Chrono.GetCurrentTimeAndDay()
+}
+// Date
+function getCurrentMonth()
+{
+    return DSharp.Chrono.GetCurrentMonth()
+}
+function getCurrentDay()
+{
+    return DSharp.Chrono.GetCurrentDay()
+}
+function getCurrentYear()
+{
+    return DSharp.Chrono.GetCurrentYear()
+}
+// Time
+function getCurrentSec()
+{
+    return DSharp.Chrono.GetCurrentSec()
+}
+
+function getCurrentMinute()
+{
+    return DSharp.Chrono.GetCurrentMinute()
+}
+
+function getCurrentHour()
+{
+    return DSharp.Chrono.GetCurrentHour()
+}
+
+function getCurrentHour()
+{
+    return DSharp.Chrono.GetCurrentHour()
+}
+
+
+// Formating
+
+
+
+function getMsFromSec(sec)
+{
+    return DSharp.Chrono.getMilliseconds(sec)
+}
+function getSecFromMinutes(minutes)
+{
+    return DSharp.Chrono.getSecondsFromMinutes(minutes)
+}
+function getMinFromHours(hours)
+{
+    return DSharp.Chrono.getMinutesFromHours(hours)
+}
+function getNsFromMis(mis)
+{
+    return DSharp.Chrono.getNsFromMis(mis)
+}
+function getMicroFromMs(ms)
+{
+    return DSharp.Chrono.getMicroFromMs(ms)
+}
+
+function Timer(time)
+{
+    return DSharp.Chrono.Timer(time)
+}

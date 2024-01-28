@@ -1,0 +1,314 @@
+float PI = 3.14159265358979323846264338
+float EulersNumber = 2.71828183
+function Sin(input) {
+    float out = DSharp.Math.Sin(input)
+    return out
+}
+
+
+function Cos(input) {
+    float out = DSharp.Math.Cos(input)
+    return out
+}
+
+
+function Tan(input) {
+    float out = DSharp.Math.Tan(input)
+    return out
+}
+
+function Sigmoid(input) {
+    float out = 1 / (1 + EulersNumber ^ -input)
+    return out
+}
+
+function Tanh(input) {
+    float out = ((EulersNumber ^ input) - (EulersNumber ^ -input)) / ((EulersNumber ^ input) + (EulersNumber ^ -input))
+    return out
+}
+function FIZDDtemp(Float)
+{
+    return DSharp.Formating.FloatToInt(Float)
+}
+function Round(input) {
+    int out = 0
+        out = DSharp.Math.Round(input)
+    return out
+}
+
+
+function Lerp(a, b, t) {
+    float out = DSharp.Math.Lerp(a, b, t)
+    return out
+}
+
+
+function Abs(x)
+{
+    float out = 0
+     out = DSharp.Math.Abs(x)
+    return out
+}
+
+
+function RadToDeg(x) {
+    float out = (x * PI) / 180
+    return out
+}
+
+
+function DegToRad(x) {
+    float out = (x * 180) / PI
+    return out
+}
+
+function Comb(n, r)
+{
+    return Perm(n, r) / Fac(r)
+}
+
+function Clamp(input, min, max) {
+    if input < min {
+        return min
+    }
+    if input > max {
+        return max
+    }
+    return input
+}
+
+
+function GetPercent(value, percent)
+{
+    float temp = value * percent / 100
+    return temp
+}
+
+function PercentToHundred(value, percent)
+{
+    float temp = value * 100 / percent
+    return temp
+}
+
+
+
+function Fac(x)
+{
+    int r = 1
+        while x > 1
+        {
+            r = r * x
+                x = x - 1
+        }
+    return r
+}
+
+
+function TaylorExp(x)
+{
+    float sum = 0
+        float term = 1
+        int i = 1
+        float sumterm = 1
+        while sum != sumterm
+        {
+            sum = sumterm
+                term = term * x / i
+                i = i + 1
+                sumterm = sumterm + term
+        }
+    return sum
+}
+
+
+function Perm(n, r)
+{
+    if n < 0 
+    {
+        DSharp.System.PrintLine("n must be superior or equal to 0")
+            return -1
+    }
+    if r < 0
+    {
+        DSharp.System.PrintLine("r must be superior or equal to 0")
+            return -1
+    }
+    if r > n
+    {
+        DSharp.System.PrintLine("r must be inferior or equal to n")
+            return -1
+    }
+    return Fac(n) / Fac(n - r)
+}
+
+
+
+function Exponential(input) {
+    float out = DSharp.Math.Power(EulersNumber, input)
+        return out
+}
+
+function HyperbolicSine(input) {
+    float out = (Exponential(input) - Exponential(-input)) / 2
+        return out
+}
+
+function HyperbolicCosine(input) {
+ 
+    float out = (Exponential(input) + Exponential(-input)) / 2
+        return out
+}
+
+function HyperbolicTangent(input) {
+
+    float out = HyperbolicSine(input) / HyperbolicCosine(input)
+        return out
+}
+
+
+
+function PowerOfTwo(input) {
+    int out = DSharp.Math.Power(input, 2)
+        return out
+}
+
+function CubeRoot(input) {
+    float out = Lerp(0, input, 1/3)
+        return out
+}
+
+function Ceiling(input) {
+    int out = Round(input + 1)
+        return out
+}
+
+function Floor(input) {
+    int out = Round(input - 0.5)
+        return out
+}
+
+
+
+function AbsoluteDifference(a, b) {
+    f   loat out = 0
+        float temp = a - b
+        out = Abs(temp)
+        return out
+}
+
+function Square(input) {
+    float out = DSharp.Math.Power(input, 2)
+        return out
+}
+
+function Modulus(dividend, divisor) {
+    return dividend - Floor(dividend / divisor) * divisor
+}
+function Cube(input) {
+    float out = DSharp.Math.Power(input, 3)
+        return out
+}
+function IsEven(number) {
+    return Modulus(number, 2) == 0
+}
+
+function IsOdd(number) {
+    return Modulus(number, 2) != 0
+}
+
+function Mean(a, b) {
+    return (a + b) / 2
+}
+function CubeRoot(input) {
+    float out = DSharp.Math.Power(input, 1/3)
+        return out
+}
+
+
+
+
+
+function Fibonacci(n) {
+    if n <= 0 {
+        return 0
+    }
+    else if n == 1 {
+        return 1
+    }
+    else {
+        float a = 0
+            float b = 1
+            int i = 2
+            while i <= n {
+                i = i + 1
+                float temp = b
+                    b += a
+                    a = temp
+            }
+        return b
+    }
+}
+
+function Max(a, b) {
+    if a > b {
+        return a
+    }
+    else {
+        return b
+    }
+}
+
+function Min(a, b) {
+    if a < b {
+        return a
+    }
+    else {
+        return b
+    }
+}
+
+function FactorialRecursive(x) {
+    if x == 0 {
+        return 1
+    }
+    else {
+        int a = FactorialRecursive(x - 1)
+        a = x * a
+            return a
+    }
+}
+
+function RoundToNearest(input) {
+    int out = Round(input + 1)
+        return out
+}
+
+function Median(a, b, c) {
+    float median = 0
+
+        if a >= b {
+            if a <= c {
+                median = a
+            }
+            else if b >= c {
+                median = b
+            }
+            else {
+                median = c
+            }
+        }
+        else {
+            if a >= c {
+                median = a
+            }
+            else if b <= c {
+                median = b
+            }
+            else {
+                median = c
+            }
+        }
+
+    return median
+}
+

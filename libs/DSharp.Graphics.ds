@@ -1,0 +1,70 @@
+// Функция SetPixel(x, y, r, g, b) устанавливает цвет пикселя по заданным координатам.
+// @param {int} x - Координата x пикселя.
+// @param {int} y - Координата y пикселя.
+// @param {int} r - Красная составляющая цвета.
+// @param {int} g - Зеленая составляющая цвета.
+// @param {int} b - Синяя составляющая цвета.
+// @return {string} - Статус установки пикселя.
+function SetPixel(x, y, r, g, b)
+{
+    string out = DSharp.Graphics.SetPixel(x, y, r, g, b);
+    return out;
+}
+
+// Функция NSprite(path, x, y, r) создает спрайт по указанному пути с заданными параметрами.
+// @param {string} path - Путь к изображению спрайта.
+// @param {int} x - Координата x спрайта.
+// @param {int} y - Координата y спрайта.
+// @param {int} r - Угол поворота спрайта.
+// @return {Sprite} - Созданный спрайт.
+function NSprite(path, x, y, r)
+{
+    Sprite s = DSharp.Graphics.Sprite(path, x, y, r);
+    return s;
+}
+
+// Функция Draw(spr) отображает спрайт на экране.
+// @param {Sprite} spr - Спрайт для отображения.
+function Draw(spr)
+{
+    DSharp.Graphics.Draw(spr);
+}
+
+
+// Функция GraphicsText(text, font, x, y, s, z, A, R, G) выводит текст на экран.
+// @param {string} text - Текст для отображения.
+// @param {Font} font - Шрифт текста.
+// @param {int} x - Координата x начала текста. -- NVec2
+// @param {int} y - Координата y начала текста. -- NVec2
+// @param {int} s - Размер шрифта.
+// @param {int} z - Толщина шрифта.
+// @param {int} A - Угол поворота текста.
+// @param {int} R - Красная составляющая цвета текста.
+// @param {int} G - Зеленая составляющая цвета текста.
+function GraphicsText(text, font, x, y, s, z, A, R, G) {
+    DSharp.Graphics.Text(text, font, x, y, s, z, A, R, G);
+}
+
+// Функция LoadSprite(sprite) загружает спрайт.
+// @param {Sprite} sprite - Спрайт для загрузки.
+function LoadSprite(sprite) {
+    DSharp.Graphics.Load(sprite);
+}
+
+// Функция DrawText(Text) отображает текст на экране.
+// @param {Text} Text - Текст для отображения.
+function DrawText(Text) {
+    DSharp.Graphics.DrawText(Text);
+}
+
+// Функция AxisAlignedCollision(Sprite, Sprite1) проверяет коллизию между спрайтами по осям.
+// @param {Sprite} Sprite - Первый спрайт.
+// @param {Sprite} Sprite1 - Второй спрайт.
+// @return {bool} - Результат проверки коллизии.
+function AxisAlignedCollision(Sprite, Sprite1) {
+    return DSharp.Physics.AxisAlignedCollision(Sprite, Sprite1);
+}
+
+function MakeWindow(name, x, y, res){
+    DSharp.Graphics.Init(name, x, y, res) 
+}

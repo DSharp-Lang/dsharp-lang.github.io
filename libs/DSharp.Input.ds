@@ -1,0 +1,7 @@
+// Возвращает булево значение, указывающее, нажата ли клавиша с указанным именем.
+// @param {string} keyName - Имя клавиши для проверки.
+// @return {bool} - true, если клавиша нажата, в противном случае - false.
+function GetKey(keyName) {
+   bool b = DSharp.Input.GetKey(keyName);
+   return b;
+}
