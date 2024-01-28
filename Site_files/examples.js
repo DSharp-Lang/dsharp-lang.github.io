@@ -1,6 +1,6 @@
 "use strict";
 var Examples = {
-    names: ['cities', 'greeter', 'i_love_ruby', 'hello_world'],
+    names: ['cities', 'greeter', 'i_love_d#', 'hello_world'],
     random: function () {
         return Examples.names[Math.floor(Math.random() * Examples.names.length)];
     },
