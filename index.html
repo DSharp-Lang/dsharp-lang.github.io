@@ -88,16 +88,9 @@
      </div>
   <div id="code">
 <figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="c1"># Результат выполнения: "Мне нравится D#"</span>
-<span class="n">say</span> <span class="o">=</span> <span class="s2">"Мне нравится D#"</span>
+<span class="n">process->stdout</span> <span class="o">>></span> <span class="s2">"(Мне нравится D#)"</span>
 <span class="nb">puts</span> <span class="n">say</span>
 
-<span class="c1"># Результат выполнения: "МНЕ *НРАВИТСЯ* RUBY"</span>
-<span class="n">say</span><span class="p">[</span><span class="s1">'нравится'</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"*нравится*"</span>
-<span class="nb">puts</span> <span class="n">say</span><span class="p">.</span><span class="nf">upcase</span>
-
-<span class="c1"># Результат выполнения: пять раз выводится</span>
-<span class="c1"># "Мне *нравится* D#"</span>
-<span class="mi">5</span><span class="p">.</span><span class="nf">times</span> <span class="p">{</span> <span class="nb">puts</span> <span class="n">say</span> <span class="p">}</span></code></pre></figure>
 
 </div>
 </div>
